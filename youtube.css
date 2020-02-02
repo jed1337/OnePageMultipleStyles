@@ -8,24 +8,45 @@ header {
 
 .sidebar {
     position: fixed;
+    height: 100%;
     width: 230px;
+    padding: 13px 22px;
+    box-sizing: border-box;
+    /*Have padding not be included in width measurement*/
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
     margin: 50px 0px;
 }
 
 .sidebar a {
     display: block;
+    color: black;
 }
 
 .main {
-    margin-left: 230px;
+    margin: 25px 0px 0px 230px;
     padding: 25px;
     background-color: #f1f1f1;
 }
 
 .post {
     background-color: white;
+    padding: 15px;
+}
+
+.author:link {
+    text-decoration: none;
+}
+
+.author:hover {
+    text-decoration: underline;
+}
+
+.replies {
+    margin-left: 58px;
+}
+
+.reply {
+    width: 460px
 }
