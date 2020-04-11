@@ -5,22 +5,19 @@
 header {
     margin: 0;
     padding: 0;
-
 }
 
-header a{
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+header img{
+    width:150px;
+    height:auto;
 }
 
 .sidebar {
     position: fixed;
     height: 100%;
     width: 230px;
-    padding: 13px 22px;
+    padding: 13px 22px 13px 0px;
     box-sizing: border-box;
-    /*Have padding not be included in width measurement*/
     z-index: 1;
     top: 0;
     left: 0;
@@ -30,6 +27,13 @@ header a{
 .sidebar a {
     display: block;
     color: black;
+    text-decoration:none;
+    height:40px;
+    padding-left: 22px;
+}
+
+.sidebar a:hover{
+    background-color: #f1f1f1;
 }
 
 .main {
@@ -47,16 +51,20 @@ header a{
     margin-bottom: 24px;
 }
 
-.author:link {
+.post a{
+    color:black;
+    font-weight:bold;
     text-decoration: none;
 }
 
-.author:hover {
-    text-decoration: underline;
+.author:link {
 }
 
 .replies {
     margin-left: 58px;
+}
+.reply{
+    padding-bottom: 24px;
 }
 
 .reply_meta_data{
